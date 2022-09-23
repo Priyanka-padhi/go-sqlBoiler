@@ -1,0 +1,24 @@
+# Directory in which the generated static code is to be kept.
+output = "models"
+
+# Each time new code is generated, completely wipe out the old one.
+wipe = true
+
+# The `go` package name used in the generated code.
+pkgname = "models"
+
+# Adds global variant of the generated functions, more on this later.
+add-global-variants = true
+
+# Generates code for enum types as well.
+add-enum-types = true
+
+# This is the postgres config, which should be self explanatory.
+[psql]
+
+host = "localhost"
+user = "root"
+pass = "123"
+dbname = "sqlBoiler_db"
+port = 5432
+sslmode = "disable"
